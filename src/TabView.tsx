@@ -63,6 +63,8 @@ export default function TabView<T extends Route>({
     // if (index !== navigationState.index) {
     //   onIndexChange(index);
     // }
+
+    //防止index=0，onIndexChange不调用
     onIndexChange(index);
   };
 
