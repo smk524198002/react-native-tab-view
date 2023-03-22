@@ -60,9 +60,10 @@ export default function TabView<T extends Route>({
   });
 
   const jumpToIndex = (index: number) => {
-    if (index !== navigationState.index) {
-      onIndexChange(index);
-    }
+    // if (index !== navigationState.index) {
+    //   onIndexChange(index);
+    // }
+    onIndexChange(index);
   };
 
   const handleLayout = (e: LayoutChangeEvent) => {
